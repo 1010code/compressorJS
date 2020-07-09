@@ -62,5 +62,5 @@ const getCompressImage=(file,sizeImage,imageUrl)=>new Promise((resolve, reject) 
     // 顯示新圖片
     newImg = canvas.toDataURL("image/jpeg", compressRatio);
     console.log("檔案大小約 " + Math.round(0.75 * newImg.length / 1000));
-    resolve({width, height, newImg});
+    resolve({width, height, newImg, imgNewHeight, imgNewWidth});
 });
